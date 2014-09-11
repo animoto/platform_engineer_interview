@@ -1,5 +1,22 @@
 # Word Count Validator
 
+### Description
+
+We want to verify that a client can count words. As such, we need a web service that supplies clients with a "test" and allows the client to submit an answer. If the client and the service were people, their conversation might go something like this:
+
+> **Client**: Service, can you give me some words to count?
+> 
+> **Service**: Sure. Please count the frequency of the words in "The quick brown > fox jumped over the lazy dog" but please ignore the words "the" and "dog".
+> 
+> **Client**: Ok, here are my results: "quick" appeared once, "brown" appeared > once, "fox" appeared once, "jumped" appeared once, "over" appeared once, > "lazy" appeared once, and "the" appeared twice.
+> 
+> **Service**: Hmm, looks like some of the counts are not what I'd expect.
+> 
+> **Client**: Opps, I included "the" when you told me not to. Here are the > counts again ... *[omitted]*
+> 
+> **Service**: Looks great.
+
+
 ### Requirements
 
 Write a server that does 2 things
@@ -28,10 +45,12 @@ You are not required to write the client application.
 
 1. The server should run on `localhost:8000` and serve a single path `/`
 2. Please include a script `./run` to run the server
+3. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
 
 ### Bonus
 
-1. **Add Source Text**: Add an admin tool to add new sources of text to the system.
-2. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
-3. **Stateless/Idempotent**: Remove as much "state" as possible from the server. Any new request to the server does not depend on the state of a previous request.
+1. **Tests**: You verify that your own service works as expected
+2. **Add Source Text**: Add an admin tool to add new sources of text to the system.
+3. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
+4. **Stateless/Idempotent**: Remove as much "state" as possible from the server. Any new request to the server does not depend on the state of a previous request.
 
