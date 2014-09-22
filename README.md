@@ -6,9 +6,9 @@ We want to verify that a client can count words. As such, we need a web service 
 
 > **Client**: Service, can you give me some words to count?
 > 
-> **Service**: Sure. Please count the frequency of the words in "The quick brown > fox jumped over the lazy dog" but please ignore the words "the" and "dog".
+> **Service**: Sure. Please count the frequency of the words in "The quick brown fox jumped over the lazy dog" but please ignore the words "the" and "dog".
 > 
-> **Client**: Ok, here are my results: "quick" appeared once, "brown" appeared > once, "fox" appeared once, "jumped" appeared once, "over" appeared once, > "lazy" appeared once, and "the" appeared twice.
+> **Client**: Ok, here are my results: "quick" appeared once, "brown" appeared once, "fox" appeared once, "jumped" appeared once, "over" appeared once, "lazy" appeared once, and "the" appeared twice.
 > 
 > **Service**: Hmm, looks like some of the counts are not what I'd expect.
 > 
