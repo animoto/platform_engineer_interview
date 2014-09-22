@@ -44,7 +44,7 @@ You are not required to write the client application.
 ### Guidelines
 
 1. If your service _can_ run on Mac OSX, then please include the following:
-    1. Any installation instrcutions or notes to set up our Mac OSX laptops to run your server
+    1. Any installation instructions or notes to set up our Mac OSX laptops to run your server
     2. A script `./run` to start the server
     3. The server should run on `localhost:8000` and serve a single path `/`
 2. If your service _cannot_ run on Mac OSX, then please run your server on a remote host and provide us the hostname, port, and path to access it.
