@@ -12,7 +12,7 @@ We want to verify that a client can count words. As such, we need a web service 
 > 
 > **Service**: Hmm, looks like some of the counts are not what I'd expect.
 > 
-> **Client**: Opps, I included "the" when you told me not to. Here are the > counts again ... *[omitted]*
+> **Client**: Opps, I included "the" when you told me not to. Here are the counts again ... *[omitted]*
 > 
 > **Service**: Looks great.
 
