@@ -48,12 +48,12 @@ You are not required to write the client application.
     2. A script `./run` to start the server
     3. The server should run on `localhost:8000` and serve a single path `/`
 2. If your service _cannot_ run on Mac OSX, then please run your server on a remote host and provide us the hostname, port, and path to access it.
-3. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
+3. Sample texts are provided in the file texts.tar.gz
+4. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
 
 ### Bonus
 
 1. **Tests**: You verify that your own service works as expected
-2. **Add Source Text**: Add an admin tool to add new sources of text to the system.
 3. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
 4. **Stateless/Idempotent**: Remove as much "state" as possible from the server. Any new request to the server does not depend on the state of a previous request.
 
