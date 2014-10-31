@@ -1,6 +1,6 @@
 # Word Count Validator
 
-### Description
+## Description
 
 We want to verify that a client can count words. As such, we need a web service that supplies clients with a "test" and allows the client to submit an answer. If the client and the service were people, their conversation might go something like this:
 
@@ -17,41 +17,51 @@ We want to verify that a client can count words. As such, we need a web service 
 > **Service**: Looks great.
 
 
-### Requirements
+## Requirements
 
 Write a server that does 2 things
 
-1. Give a client at least the following:
-    1. A random body of text
-    2. A list of some but not all words in that body of text
-2. Receive in a request at least the following:
-    1. A body of text
-    2. A list of some but not all words in that body of text
-    3. A count of the frequency of every word in the body of text excluding words from the list
-    and responds
-    1. If the word frequency count is correct, then `200 OK`
-    2. If the word frequency count is incorrect or the request is otherwise invalid, then `400 Bad Request`
+### 1. Respond to a client HTTP request
 
+Respond to a client HTTP request with at least the following in the response body:
 
-A client for this server is expected to:
+1. A random body of text. Some sample texts are included in the file: texts.tar.gz
+2. A list of some but not all words in that body of text
+
+### 2. Receive a client HTTP request
+
+Receive a client HTTP request with at least the following in the request
+
+1. A body of text
+2. A list of some but not all words in that body of text
+3. A count of the frequency of every word in the body of text excluding words from the list
+
+and respond with:
+
+1. If the word frequency count is correct, then `200 OK`
+2. If the word frequency count is incorrect or the request is otherwise invalid, then `400 Bad Request`
+
+You are *not* required to write the client application, but you can assume that a client for this server should:
 
 1. Request from 1
 2. Count the frequency of each word in the given body of text minus all of the given exclusion words
 3. Send to 2 the word frequency count result with the original response body from 1.
 
-You are not required to write the client application.
+### Readme
 
-### Guidelines
+Writing software in a fast-paced, independent environment involves discovering and resolving many ambiguities. Your ability to make good assumptions and trade-offs is key. Please include a readme document in your submission that describes any assumptions or decisions.
 
-1. If your service _can_ run on Mac OSX, then please include the following:
+## Guidelines
+
+1. You should feel free to write your solution in whichever language you are most comfortable writing.
+2. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
+2. If your service can run on a Unix environment (e.g. ) Mac OSX, then please include the following:
     1. Any installation instructions or notes to set up our Mac OSX laptops to run your server
     2. A script `./run` to start the server
     3. The server should run on `localhost:8000` and serve a single path `/`
-2. If your service _cannot_ run on Mac OSX, then please run your server on a remote host and provide us the hostname, port, and path to access it.
-3. Sample texts are provided in the file texts.tar.gz
-4. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
+3. If your service _cannot_ run on Mac OSX, then please run your server on a remote host and provide us the hostname, port, and path to access it.
 
-### Bonus
+## Bonus
 
 1. **Tests**: You verify that your own service works as expected
 3. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
