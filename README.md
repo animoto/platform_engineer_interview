@@ -1,5 +1,10 @@
 # Word Count Validator
 
+## Objective
+
+Recently the internet has exploded to reach across the galaxy.  There is a hostile species of troll aliens that have started infesting the internet with disruptive, angry comments on internet forums.  Scientists have determined that
+the troll aliens are really bad at counting words.  Thus they have tasked you with creating a type of CAPTCHA for troll aliens to keep them out of the forums. (http://en.wikipedia.org/wiki/CAPTCHA)
+
 ## Description
 
 We want to verify that a client can count words. As such, we need a web service that supplies clients with a "test" and allows the client to submit an answer. If the client and the service were people, their conversation might go something like this:
@@ -26,14 +31,14 @@ Write a server that does 2 things
 Respond to a client HTTP request with at least the following in the response body:
 
 1. A random body of text. Some sample texts are included in the file: texts.tar.gz
-2. A list of some but not all words in that body of text
+2. A list of some but not all words in that body of text (exception: texts with only one unique word should use an empty list)
 
 ### 2. Receive a client HTTP request
 
 Receive a client HTTP request with at least the following in the request
 
 1. A body of text
-2. A list of some but not all words in that body of text
+2. A list of some but not all words in that body of text (exception: texts with only one unique word should have an empty list)
 3. A count of the frequency of every word in the body of text excluding words from the list
 
 and respond with:
@@ -49,7 +54,7 @@ You are *not* required to write the client application, but you can assume that 
 
 ### Readme
 
-Writing software in a fast-paced, independent environment involves discovering and resolving many ambiguities. Your ability to make good assumptions and trade-offs is key. Please include a readme document in your submission that describes any assumptions or decisions.
+Writing software in a fast-paced, independent environment involves discovering and resolving many ambiguities. Your ability to make good assumptions and trade-offs is key. Keep the objective of the assignment in mind when making such decisions.  Please include a readme document in your submission that describes any assumptions or decisions.
 
 ## Guidelines
 
