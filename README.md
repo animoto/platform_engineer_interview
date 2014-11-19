@@ -2,8 +2,7 @@
 
 ## Objective
 
-Recently the internet has exploded to reach across the galaxy.  There is a hostile species of troll aliens that have started infesting the internet with disruptive, angry comments on internet forums.  Scientists have determined that
-the troll aliens are really bad at counting words.  Thus they have tasked you with creating a type of CAPTCHA for troll aliens to keep them out of the forums. (http://en.wikipedia.org/wiki/CAPTCHA) Trying to be helpful, the scientists have sent along some starter code. It's not complete, and, as an engineer, you may have done some things differently. The scientists suggest that:
+Recently the internet has exploded to reach across the galaxy.  There is a hostile species of troll aliens that have started infesting the internet with disruptive, angry comments on internet forums.  Scientists have determined that the troll aliens are really bad at counting words.  Thus they have tasked you with creating a type of [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA) for troll aliens to keep them out of the forums. Trying to be helpful, the scientists have sent along some starter code. It's not complete and some things could probably be done better. To run the scientists' starts code:
 
         # You can get everything installed using
         bundle install
@@ -22,11 +21,11 @@ We want to verify that a client can count words. As such, we need a web service 
 > 
 > **Service**: Sure. Please count the frequency of the words in "The quick brown fox jumped over the lazy dog" but please ignore the words "the" and "dog".
 > 
-> **Client**: Ok, here are my results: "quick" appeared once, "brown" appeared once, "fox" appeared once, "jumped" appeared once, "over" appeared once, "lazy" appeared once, and "the" appeared twice.
+> **Client**: Ok, the original text was "The quick brown fox jumped over the lazy dog" and in this text, ignoring the words  "the" and "dog", "quick" appeared once, "brown" appeared once, "fox" appeared once, "jumped" appeared once, "over" appeared once, "lazy" appeared once, and "the" appeared twice.
 > 
-> **Service**: Hmm, looks like some of the counts are not what I'd expect.
+> **Service**: Sorry, that's wrong. Nice try space troll.
 > 
-> **Client**: Opps, I included "the" when you told me not to. Here are the counts again ... *[omitted]*
+> **Client**: Oops, what I meant was the original text was "The quick brown fox jumped over the lazy dog" and in this text, ignoring the words  "the" and "dog", "quick" appeared once, "brown" appeared once, "fox" appeared once, "jumped" appeared once, "over" appeared once, and "lazy" appeared once.
 > 
 > **Service**: Looks great.
 
@@ -39,7 +38,7 @@ Write a server that does 2 things
 
 Respond to a client HTTP request with at least the following in the response body:
 
-1. A random body of text. Some sample texts are included in the file: texts.tar.gz
+1. A random body of text. Some sample texts are included.
 2. A list of some but not all words in that body of text (exception: texts with only one unique word should use an empty list)
 
 ### 2. Receive a client HTTP request
