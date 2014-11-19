@@ -3,7 +3,16 @@
 ## Objective
 
 Recently the internet has exploded to reach across the galaxy.  There is a hostile species of troll aliens that have started infesting the internet with disruptive, angry comments on internet forums.  Scientists have determined that
-the troll aliens are really bad at counting words.  Thus they have tasked you with creating a type of CAPTCHA for troll aliens to keep them out of the forums. (http://en.wikipedia.org/wiki/CAPTCHA)
+the troll aliens are really bad at counting words.  Thus they have tasked you with creating a type of CAPTCHA for troll aliens to keep them out of the forums. (http://en.wikipedia.org/wiki/CAPTCHA) Trying to be helpful, the scientists have sent along some starter code. It's not complete, and, as an engineer, you may have done some things differently. The scientists suggest that:
+
+        # You can get everything installed using
+        bundle install
+
+        # Run the server using
+        ruby app.rb
+
+        # Run the test suite via
+        rspec
 
 ## Description
 
