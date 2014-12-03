@@ -62,7 +62,11 @@ You are *not* required to write the client application, but you can assume that 
 
 ### Readme
 
-Writing software in a fast-paced, independent environment involves discovering and resolving many ambiguities. Your ability to make good assumptions and trade-offs is key. Keep the objective of the assignment in mind when making such decisions.  Please include a readme document in your submission that describes any assumptions or decisions.
+Writing software in a fast-paced, independent environment involves discovering and resolving many ambiguities. Your ability to make good assumptions and trade-offs is key. Keep the objective of the assignment in mind when making such decisions. Please include a readme document in your submission that describes any assumptions or decisions.
+
+### Tests
+
+Quality assurance is *very important* for maintaining a successful defense against the alien trolls. Please include a means to automatically assert the correctness of your code. This can be unit tests that validate the correctness of individual small pieces of code or functional tests that verify expected responses from particular endpoints. However you choose to implement tests, it must be automated and simple to run. It should not be a matrix of complicated human-driven steps and comparisons.
 
 ## Guidelines
 
@@ -73,10 +77,10 @@ Writing software in a fast-paced, independent environment involves discovering a
     2. A script `./run` to start the server
     3. The server should run on `localhost:8000` and serve a single path `/`
 3. If your service _cannot_ run on Mac OSX, then please run your server on a remote host and provide us the hostname, port, and path to access it.
+4. An open ended task like this can be expanded and improved infinitely. One could work on it forever, continously making little tweaks here and there. Meanwhile, alien trolls continue to terrorize the internet. This project should take a few hours, but certainly no more than 8. Please set a maximum amount of time to work on this project and submit whatever you have by the end of that time window. If you have not finished to your own satisfaction, please explain everything that you would like to add in your Readme.
+5. Treat this assignment as you would an actual work project and _write code as you would in the actual work place_. Please do not write code as you would for a research project in a theoretical quantum computer or as a proof of P=NP.
 
 ## Bonus
 
-1. **Tests**: You verify that your own service works as expected
-3. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
-4. **Stateless/Idempotent**: Remove as much "state" as possible from the server. Any new request to the server does not depend on the state of a previous request.
-
+1. **Cheating Protection**: When the server receives text, exclusion words, and a word count from the client, it verifies that the text and exclusion words that it previously gave a client.
+2. **Stateless/Idempotent**: Remove as much "state" as possible from the server. Any new request to the server does not depend on the state of a previous request.
