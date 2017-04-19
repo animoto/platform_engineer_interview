@@ -70,6 +70,7 @@ Quality assurance is *very important* for maintaining a successful defense again
 
 ## Guidelines
 
+0. Please do not create a public fork this repository. Rather, you can submit a git package, a zip file, or a private fork.
 1. You should feel free to write your solution in whichever language you are most comfortable writing.
 2. Style, algorithms, data structures, request/response format, etc. are all up to you. However, keep in mind that we will be looking at these choices.
 2. If your service can run on a Unix environment (e.g. ) Mac OSX, then please include the following:
